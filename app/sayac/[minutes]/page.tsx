@@ -7,7 +7,6 @@ import { Background } from "@/components/background";
 import { Speakers } from "@/components/speakers";
 import qrcode from "@/assets/qrcode.svg";
 import Image from "next/image";
-import SparklesText from "@/components/ui/sparkles-text";
 
 export default function Sayac({ params }: { params: { minutes: string } }) {
   const { minutes } = params;
@@ -42,10 +41,9 @@ export default function Sayac({ params }: { params: { minutes: string } }) {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       <Background />
-      <SparklesText
-        text="Devfest Kayseri '24"
-        className="text-8xl font-bold text-center mt-4"
-      />
+      <h1 className="text-8xl font-bold text-center mt-4">
+        Devfest Kayseri &apos;24
+      </h1>
 
       <div className="font-sans text-center absolute inset-x-0 bottom-0 flex flex-col justify-center items-center gap-16 mb-8">
         <div>
